@@ -16,7 +16,7 @@ st.title('Анализ и прогнозирование цен на драго�
 @st.cache_data
 def load_data():
     # Чтение данных из CSV файла
-    data = pd.read_csv('metals.csv')
+    data = pd.read_csv(r'streamlitapp/metals.csv')
     # Преобразование столбца Date в datetime
     data['Date'] = pd.to_datetime(data['Date'])
     # Установка Date в качестве индекса
